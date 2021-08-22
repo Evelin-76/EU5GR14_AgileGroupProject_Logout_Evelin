@@ -31,7 +31,7 @@ public class LogoutStepDefs_Evelin {
 
     @Then("users navigate to {string} page")
     public void usersGoOutFromAplication(String expectedTitle) {
-
+        BrowserUtils.waitFor(2);
         String actualTitle = Driver.get().getTitle();
         Assert.assertEquals(expectedTitle,actualTitle);
     }
