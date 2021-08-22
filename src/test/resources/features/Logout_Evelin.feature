@@ -2,7 +2,7 @@
 Feature: Logout from application
 
 
-@login
+
   Scenario: user logout from application through avatar button
     Given the User_Evelin is on the login page
     And enter valid credentials "salesmanager15@info.com" and "salesmanager"

@@ -3,8 +3,7 @@ Feature: Login as an authorized user
     Background:
       Given the User_Evelin is on the login page
 
-  @wip
-    @loginWithValidCredentials
+
   Scenario Outline: : User login with valid credentials
 
     When user enters valid "<validUsername>" and "<validPassword>"
@@ -23,7 +22,7 @@ Feature: Login as an authorized user
       | manuf_user10@info.com       | manufuser        |
       | manuf_user110@info.com      | manufuser        |
 
-  @invalidUsernameOrPassword
+
   Scenario Outline: User login with invalid
     When user enters invalid username "<username>" or password "<password>"
     Then user sees "Wrong login/password" error message
@@ -42,7 +41,7 @@ Feature: Login as an authorized user
       | manu_user_10@info.com     | manufuser        |
       | manu_user10@info.com      | manuf/user       |
 
-  @emptyLoginInputBox
+
   Scenario Outline: User leaves any login input box blanked
     When any login input box is empty "<emptyUsernameBox>" "<emptyPasswordBox>"
     Then user sees "Completa este campo" error message in "<emptyUsernameBox>" "<emptyPasswordBox>"
