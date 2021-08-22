@@ -1,4 +1,4 @@
-
+@smoke
 Feature: Logout from application
 
 

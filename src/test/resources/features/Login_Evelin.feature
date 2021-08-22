@@ -1,3 +1,4 @@
+@smoke
 Feature: Login as an authorized user
     Background:
       Given the User_Evelin is on the login page
