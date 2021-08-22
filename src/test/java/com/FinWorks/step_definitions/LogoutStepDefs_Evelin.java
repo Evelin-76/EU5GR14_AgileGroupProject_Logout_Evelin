@@ -10,7 +10,7 @@ import io.cucumber.java.en.Then;
 import org.junit.Assert;
 
 public class LogoutStepDefs_Evelin {
-    @And("enter valid credentials {string} and {string}")
+    @And("enter login with {string} and {string}")
     public void enterValidCredentials(String username, String password) {
         new LoginPage().login(username, password);
     }

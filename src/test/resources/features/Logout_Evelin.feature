@@ -3,7 +3,7 @@ Feature: Logout from application
 
 Background:
   Given the User_Evelin is on the login page
-  And enter valid credentials "salesmanager99@info.com" and "salesmanager"
+  And enter login with "salesmanager99@info.com" and "salesmanager"
   And user enters to "#Inbox" page
 
   Scenario: user logout from application through avatar button
