@@ -1,12 +1,12 @@
 @smoke
 Feature: Logout from application
 
-
+Background:
+  Given the User_Evelin is on the login page
+  And enter valid credentials "salesmanager99@info.com" and "salesmanager"
+  And user enters to "#Inbox" page
 
   Scenario: user logout from application through avatar button
-    Given the User_Evelin is on the login page
-    And enter valid credentials "salesmanager15@info.com" and "salesmanager"
-    And user enters to "#Inbox" page
     And click on "dropdawn" button
     Then a drop down many is displayed
     And user clicks on "logout" button
